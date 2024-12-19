@@ -56,10 +56,8 @@ public class Game {
                 System.out.println(currentPlayer.getUser() + " found a ladder! Climbing up.");
                 currentPlayer.setPosition(((Ladder) cell).getEndPosition());
             }
-            if (currentPlayer.getPosition() == 100) {
-                System.out.println(currentPlayer.getUser() + " wins!");
-                break;
-            }
+
+            // Move to the next player
             currentPlayerIndex = (currentPlayerIndex + 1) % players.size();
 
         }
