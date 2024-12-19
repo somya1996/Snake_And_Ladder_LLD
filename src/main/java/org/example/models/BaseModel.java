@@ -1,2 +1,10 @@
-package org.example.models;public class BaseModel {
+package org.example.models;
+
+import java.util.Date;
+
+public class BaseModel {
+    private long id;
+    private Date createdAt;
+    private Date lastUpdatedAt;
+    private boolean isDeleted;
 }

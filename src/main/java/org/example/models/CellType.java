@@ -1,2 +1,7 @@
-package org.example.models;public class CellType {
+package org.example.models;
+
+public enum CellType {
+    EMPTY,
+    SNAKE,
+    LADDER,
 }
